@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
+    - what's up
 - intent: goodbye
   examples: |
     - good afternoon
@@ -30,7 +29,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -39,7 +37,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -49,7 +46,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: mood_great
   examples: |
     - perfect
@@ -61,12 +57,12 @@ nlu:
     - I am great
     - I am amazing
     - I am going to save the world
+    - I'm good
     - super stoked
     - extremely good
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,10 +79,31 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter.
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+    - I want to subscribe to a newsletter.
+    - i want to subscribe
+- intent: inform_email
+  examples: |
+    - My email is [example@example.com](email)
+    - [random@example.com](email)
+    - Please send it to [anything@example.com](email)
+    - Email is [something@example.com](email)
+    - my email is [marcelpsaraiva@gmail.com](email)
+- intent: inform_frequency
+  examples: |
+    - every week
+    - once a week
+    - twice per month
+    - as ofter as possible
+    - once a month
+    - twice a week
