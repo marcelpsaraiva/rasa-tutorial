@@ -1,1 +1,14 @@
-# None of the test stories failed - all good!
+version: "2.0"
+stories:
+- story: newsletter form happy path (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: subscribe
+  - action: newsletter_form
+  - active_loop: newsletter_form
+  - slot_was_set:
+    - email: fulano@hotmail.com
+  - active_loop: null
+  - action: utter_subscribed
+  - action: action_listen  # predicted: utter_goodbye

@@ -89,3 +89,25 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: newsletter form happy path
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I want to subscribe
+    intent: subscribe
+  - action: newsletter_form
+  - active_loop: newsletter_form
+  - user: |
+      my email is [fulano@hotmail.com](email)
+    intent: inform_email
+  - action: newsletter_form
+  - user: |
+      every day
+    intent: inform_frequency
+  - action: newsletter_form
+  - active_loop: null
+  - action: utter_subscribed

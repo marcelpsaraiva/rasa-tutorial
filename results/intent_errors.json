@@ -4,15 +4,7 @@
     "intent": "greet",
     "intent_prediction": {
       "name": "goodbye",
-      "confidence": 0.7232457995414734
-    }
-  },
-  {
-    "text": "I'm good",
-    "intent": "mood_great",
-    "intent_prediction": {
-      "name": "mood_unhappy",
-      "confidence": 0.47389206290245056
+      "confidence": 0.5600859522819519
     }
   }
 ]

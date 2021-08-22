@@ -29,36 +29,23 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: greet and subscribe
+- story: newsletter form continue
   steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: subscribe
-    - action: newsletter_form
-    - active_loop: newsletter_form
-    - active_loop: null
-    - action: utter_subscribed
-    - action: utter_goodbye
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
   - intent: subscribe
   - action: newsletter_form
   - active_loop: newsletter_form
-  - slot_was_set:
-    - requested_slot: email
-  - slot_was_set:
-    - email: marcelpsaraiva@gmail.com
-  - slot_was_set:
-    - email: marcelpsaraiva@gmail.com
-  - slot_was_set:
-    - requested_slot: frequency
-  - slot_was_set:
-    - frequency: twice a week
-  - slot_was_set:
-    - requested_slot: null
+  - intent: chitchat
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: newsletter_form
+
+- story: newsletter form stop
+  steps:
+  - intent: subscribe
+  - action: newsletter_form
+  - active_loop: newsletter_form
+  - intent: chitchat
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
   - active_loop: null
-  - action: utter_subscribed
-  - action: utter_goodbye
