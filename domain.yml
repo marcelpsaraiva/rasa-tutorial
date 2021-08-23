@@ -1,7 +1,7 @@
 version: '2.0'
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
 intents:
 - inform_frequency
 - subscribe
@@ -14,6 +14,8 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
+- ask_price
+- explain
 entities:
 - email
 slots:
@@ -21,8 +23,17 @@ slots:
     type: text
     influence_conversation: false
   frequency:
-    type: text
-    influence_conversation: false
+    type: categorical
+    values:
+      - once a week
+      - twice a week
+    influence_conversation: true
+  requested_slot:
+    type: categorical
+    influence_conversation: true
+    values:
+      - email
+      - frequency
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -46,8 +57,14 @@ responses:
   - text: |-
       You're all set! Check your inbox at {email} to confirm your subscription.
        You will receive emails {frequency}.
-  utter_ask_continue:
-  - text: Sorry, I don't quite understand. Do you want to continue?
+  utter_price_for_once_a_week:
+  - text: Once a week subscription costs $1.
+  utter_price_for_twice_a_week:
+  - text: Twice a week subscription costs $3.
+  utter_explain_email:
+  - text: So that I know where to send it.
+  utter_explain_frequency:
+  - text: So that I know how often to send it.
 actions:
 - utter_ask_continue
 - utter_goodbye

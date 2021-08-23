@@ -156,3 +156,16 @@ nlu:
     - I want to watch a movie
     - I want a doctor
     - How's the weather?
+- intent: ask_price
+  examples: |
+    - how much will it be
+    - what's the price
+    - how much will it cost
+    - How much will I pay for this?
+- intent: explain
+  examples: |
+    - why
+    - why do you need to know that
+    - why should i give you this information
+    - why are you asking?
+    - why is this needed?
