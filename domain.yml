@@ -3,13 +3,13 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- chitchat
+- inform_frequency
 - subscribe
+- chitchat
+- affirm
 - inform_email
 - greet
-- inform_frequency
 - goodbye
-- affirm
 - deny
 - mood_great
 - mood_unhappy
@@ -49,6 +49,7 @@ responses:
   utter_ask_continue:
   - text: Sorry, I don't quite understand. Do you want to continue?
 actions:
+- utter_ask_continue
 - utter_goodbye
 - utter_greet
 - utter_subscribed

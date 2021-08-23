@@ -4,7 +4,15 @@
     "intent": "greet",
     "intent_prediction": {
       "name": "goodbye",
-      "confidence": 0.5600859522819519
+      "confidence": 0.5239484906196594
+    }
+  },
+  {
+    "text": "don't like that",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6068719625473022
     }
   }
 ]

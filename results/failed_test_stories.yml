@@ -11,4 +11,3 @@ stories:
     - email: fulano@hotmail.com
   - active_loop: null
   - action: utter_subscribed
-  - action: action_listen  # predicted: utter_goodbye
