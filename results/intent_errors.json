@@ -1,10 +1,10 @@
 [
   {
     "text": "good afternoon",
-    "intent": "greet",
+    "intent": "goodbye",
     "intent_prediction": {
-      "name": "goodbye",
-      "confidence": 0.5111228823661804
+      "name": "greet",
+      "confidence": 0.5172823667526245
     }
   },
   {
@@ -12,7 +12,7 @@
     "intent": "chitchat",
     "intent_prediction": {
       "name": "deny",
-      "confidence": 0.5230662822723389
+      "confidence": 0.645444393157959
     }
   }
 ]

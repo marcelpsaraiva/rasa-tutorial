@@ -11,3 +11,4 @@ stories:
     - email: fulano@hotmail.com
   - active_loop: null
   - action: utter_subscribed
+  - action: submit_newsletter_form

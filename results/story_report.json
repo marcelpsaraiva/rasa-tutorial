@@ -1,65 +1,17 @@
 {
-  "[example@mail.com](email)": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 1
-  },
   "subscribe": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 4
   },
-  "inform_frequency": {
+  "affirm": {
     "precision": 1.0,
-    "recall": 0.5,
-    "f1-score": 0.6666666666666666,
-    "support": 2
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5
   },
   "utter_happy": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3
-  },
-  "[ciclano@mail.com](email)": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 1
-  },
-  "[fulano@hotmail.com](email)": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 1
-  },
-  "deny": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2
-  },
-  "newsletter_form": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 13
-  },
-  "mood_great": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2
-  },
-  "mood_unhappy": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3
-  },
-  "inform_email": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -71,49 +23,43 @@
     "f1-score": 1.0,
     "support": 1
   },
-  "utter_iamabot": {
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "[ciclano@mail.com](email)": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 1
   },
-  "greet": {
+  "[example@mail.com](email)": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 6
+    "support": 1
   },
-  "utter_did_that_help": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3
-  },
-  "utter_greet": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 6
-  },
-  "utter_ask_continue": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4
-  },
-  "utter_cheer_up": {
+  "mood_unhappy": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 3
   },
-  "goodbye": {
-    "precision": 0.6666666666666666,
+  "mood_great": {
+    "precision": 1.0,
     "recall": 1.0,
-    "f1-score": 0.8,
+    "f1-score": 1.0,
     "support": 2
   },
-  "utter_subscribed": {
+  "[fulano@hotmail.com](email)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "utter_ask_continue": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -125,36 +71,101 @@
     "f1-score": 1.0,
     "support": 4
   },
-  "chitchat": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4
-  },
   "action_listen": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 34
   },
-  "affirm": {
+  "newsletter_form": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 5
+    "support": 13
   },
-  "accuracy": 0.9910714285714286,
+  "utter_greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6
+  },
+  "inform_frequency": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "utter_iamabot": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "chitchat": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6
+  },
+  "utter_cheer_up": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "submit_newsletter_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "utter_did_that_help": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "inform_email": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "utter_subscribed": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9913793103448276,
+    "f1-score": 0.9956709956709957,
+    "support": 116
+  },
   "macro avg": {
-    "precision": 0.986111111111111,
-    "recall": 0.9791666666666666,
-    "f1-score": 0.9777777777777779,
-    "support": 112
+    "precision": 1.0,
+    "recall": 0.98,
+    "f1-score": 0.9866666666666666,
+    "support": 116
   },
   "weighted avg": {
-    "precision": 0.994047619047619,
-    "recall": 0.9910714285714286,
-    "f1-score": 0.9904761904761905,
-    "support": 112
+    "precision": 1.0,
+    "recall": 0.9913793103448276,
+    "f1-score": 0.9942528735632183,
+    "support": 116
   },
   "conversation_accuracy": {
     "accuracy": 0.9090909090909091,

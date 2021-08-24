@@ -23,6 +23,7 @@ intents:
 entities:
 - email
 - age
+- frequency
 slots:
   email:
     type: text
@@ -125,8 +126,8 @@ forms:
         - type: from_entity
           entity: email
       frequency:
-        - type: from_text
-          intent: inform_frequency
+        - type: from_entity
+          entity: frequency
       notifications:
         - type: from_intent
           intent: affirm
