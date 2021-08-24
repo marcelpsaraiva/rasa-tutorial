@@ -16,6 +16,9 @@ intents:
 - bot_challenge
 - ask_price
 - explain
+- ask_how_i_feel
+- confirm
+- thankyou
 entities:
 - email
 slots:
@@ -45,6 +48,8 @@ responses:
   - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
+  utter_bad:
+  - text: I'm sorry to hear this.
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -65,11 +70,21 @@ responses:
   - text: So that I know where to send it.
   utter_explain_frequency:
   - text: So that I know how often to send it.
+  utter_ask_user_question:
+  - text: How do you feel?
+  utter_great:
+  - text: Glad to hear that!
+  utter_ask_confirm:
+  - text: Do you really want to confirm that?
+  utter_confirmed:
+  - text: Confirmed.
+  utter_ask_continue:
+  - text: Do you want to continue?
 actions:
 - utter_ask_continue
 - utter_goodbye
-- utter_greet
 - utter_subscribed
+# - utter_greet
 forms:
   newsletter_form:
     required_slots:

@@ -29,6 +29,13 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - xoxo
+    - xo xo
+- intent: ask_how_i_feel
+  examples: |
+    - Ask me how I feel
+    - Do you want to know how I feel?
+    - Ask me about my feelings?
 - intent: affirm
   examples: |
     - yes
@@ -162,6 +169,17 @@ nlu:
     - what's the price
     - how much will it cost
     - How much will I pay for this?
+- intent: confirm
+  examples: |
+    - can I confirm
+    - I want to confirm
+    - I would like to confirm that
+- intent: thankyou
+  examples: |
+    - thank you
+    - thanks
+    - thanks a lot
+    - thank you so much!
 - intent: explain
   examples: |
     - why
