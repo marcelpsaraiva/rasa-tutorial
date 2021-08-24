@@ -19,8 +19,10 @@ intents:
 - ask_how_i_feel
 - confirm
 - thankyou
+- inform_age
 entities:
 - email
+- age
 slots:
   email:
     type: text
@@ -31,16 +33,27 @@ slots:
       - once a week
       - twice a week
     influence_conversation: true
+  notifications:
+    type: bool
+    influence_conversation: false
   requested_slot:
     type: categorical
     influence_conversation: true
     values:
       - email
       - frequency
+  age:
+    type: text
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hey! How are you?
-  - text: Hi, how's it going?
+    buttons:
+      - title: great
+        payload: I feel great
+      - title: subscribe
+        payload: I want to subscribe
+  image: http://gph.is/1LfEFeu
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -56,6 +69,11 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_ask_email:
   - text: What is your email address?
+    buttons:
+      - title: Work email
+        payload: /inform_email{{"email":"example@work.com"}}
+      - title: Personal email
+        payload: /inform_email{{"email":"example@home.com"}}
   utter_ask_frequency:
   - text: How often do you want to receive emails from me?
   utter_subscribed:
@@ -80,6 +98,17 @@ responses:
   - text: Confirmed.
   utter_ask_continue:
   - text: Do you want to continue?
+  utter_age_back:
+  - text: Your age is {age}.
+  utter_email_back:
+  - text: Your email is {email}.
+  utter_ask_notifications:
+  - text: Do you want notifications?
+    buttons:
+      - title: Yes
+        payload: /affirm
+      - title: No
+        payload: /deny
 actions:
 - utter_ask_continue
 - utter_goodbye
@@ -94,3 +123,11 @@ forms:
       frequency:
       - type: from_text
         intent: inform_frequency
+      notifications:
+      - type: from_intent
+        intent: affirm
+        value: true
+      - type: from_intent
+        intent: deny
+        value: false
+      

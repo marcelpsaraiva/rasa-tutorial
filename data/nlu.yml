@@ -187,3 +187,9 @@ nlu:
     - why should i give you this information
     - why are you asking?
     - why is this needed?
+- intent: inform_age
+  examples: |
+    - My age is [20 years](age)
+    - I am [15](age)
+    - I am [47 years](age)
+    - I am [8 years](age) old
